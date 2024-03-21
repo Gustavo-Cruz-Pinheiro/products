@@ -1,0 +1,22 @@
+<div class="container">
+  <p style="color: green"><%= notice %></p>
+  <div class="body">
+    <div class="body-content">
+      <div class="form">
+        <h1 id="form-tittle">Produto</h1>
+
+
+          <%= render @product %>
+
+          <div>
+            <%= link_to "Edit this product", edit_product_path(@product) %> |
+            <%= link_to "Back to products", products_path %>
+
+            <div id="button">
+              <%= button_to "Destroy this product", @product, method: :delete %>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,102 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(209, 209, 209);
+}
+
+.header {
+    background-color: lime;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+.body-content {
+    width: 70%;
+}
+
+.body-tittle {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-top: 50px;
+    border-bottom: 5px solid lime;
+}
+
+#products {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#product {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    line-height: 30px;
+}
+
+#product p {
+    margin-right: 20px;
+}
+
+#see_product {
+    padding-bottom: 40px;
+}
+
+#button {
+    text-decoration: none;
+    height: 40px;
+    width: 100px;
+}
+
+.form {
+    background-color: white;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+#form-tittle {
+    margin-bottom: 20px;
+}
+
+.form input {
+    width: 700px;
+    height: 30px;
+    margin-bottom: 40px;
+}

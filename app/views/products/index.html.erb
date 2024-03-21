@@ -1,0 +1,33 @@
+<div class="container">
+  <p style="color: green"><%= notice %></p>
+
+  <div class="header">
+    <h1 id="tittle">Products</h1>
+  </div>
+
+  <div class="body">
+    <div class="body-content">
+      <div class="body-tittle">
+        <h2>
+          Destaques
+        </h2>
+      </div>
+      <div id="products">
+        <% @products.each do |product| %>
+          <%= render product %>
+          <p id="see_product">
+            <%= link_to "Ver esse produto", product %>
+          </p>
+        <% end %>
+      </div>
+      <button id="button">
+        <%begin%>
+          <%= link_to "Novo Produto", new_product_path %> 
+        <%end%>
+      </button>
+    </div>
+  </div>
+
+  <div class="footer">
+  </div>
+</div>

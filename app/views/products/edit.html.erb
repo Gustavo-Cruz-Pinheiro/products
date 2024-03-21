@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="body">
+    <div class="body-content">
+      <div class="form">
+        <h1 id="form-tittle">Editar Produto</h1>
+
+        <%= render "form", product: @product %>
+
+        <br>
+
+        <div>
+          <%= link_to "Show this product", @product %> |
+          <%= link_to "Back to products", products_path %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
